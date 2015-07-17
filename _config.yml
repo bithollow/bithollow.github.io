@@ -1,1 +1,16 @@
 timezone: Aisa/Shanghai
+gems:
+  - jekyll-mentions
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
