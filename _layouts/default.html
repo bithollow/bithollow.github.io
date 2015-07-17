@@ -14,17 +14,11 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>bithollow.github.io</h1>
-        <p>Documents for developers and users</p>
-        <p class="view"><a href="https://github.com/bithollow">View My GitHub Profile</a></p>
-      </header>
+      {% include header.html %}
       <section>
         {{ content }}
       </section>
-      <footer>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+      {% include footer.html  %}
     </div>
     <script src="javascripts/scale.fix.js"></script>
     <script>
