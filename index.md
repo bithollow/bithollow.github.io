@@ -9,7 +9,7 @@ BitHollow is this small organization dedicate to develop robotics. We are pictur
 BH Pilot is a HAT of RaspberryPi 2, together they are capable of piloting drones, rovers etc. With various sensors equipped, BH makes RaspberryPi 2 alive to the real world.
 
 ### Mission/Vision/Values
-Founders of BitHollow are always holding back their discusstion about this, they have no clues where they are heading to.
+Founders of BitHollow are always holding back their discusstion about this, they have no clue where they are heading to.
 
 ### Authors and Contributors
 April 2015, Aaron Wang Shi (@onceme), Cao Fei(@droneboost), Li Wei Feng (@muzi-15) started BitHollow, don't look down upon them, they might be the rulers of this galaxy in the upcoming 50 years.
