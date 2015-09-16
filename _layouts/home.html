@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    {% include meta.html %}
+  </head>
+  <body>
+    <div class="container-fluid">
+      {% include header.html %}
+    </div>
+    <div>
+      {% include coverstory.html %}
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <div class="well">
+          <center><h3>{{ page.sections['col-0-title'] | textilize }}</h3></center>
+          {{ page.sections['col-0'] | textilize }}
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <div class="well">
+          <center><h3>{{ page.sections['col-1-title'] | textilize }}</h3></center>
+          {{ page.sections['col-1'] | textilize }}
+          </div>
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <div class="well">
+          <center><h3>{{ page.sections['col-2-title'] | textilize }}</h3></center>
+          {{ page.sections['col-2'] | textilize }}
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4">
+          <div class="container-fluid">
+            {% include carousel.html %}
+          </div>
+        </div>
+        <div class="col-sm-8 col-md-8 col-lg-8">
+          <div class="panel panel-default">
+            <div class="container-fluid">
+              {{ content }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      {% include footer.html  %}
+    </div>
+  </body>
+</html>

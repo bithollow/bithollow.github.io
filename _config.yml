@@ -1,3 +1,4 @@
+encoding: utf-8
 timezone: Aisa/Shanghai
 gems:
   - jekyll-mentions
@@ -10,7 +11,25 @@ defaults:
       layout: "default"
   -
     scope:
-      path: "_posts"
+      path: ""
+      type: "home"
+    values:
+      layout: "home"
+  -
+    scope:
+      path: "_posts/blog"
       type: "posts"
     values:
-      layout: "post"
+      layout: "blog"
+  -
+    scope:
+      path: "_posts/document"
+      type: "posts"
+    values:
+      layout: "document"
+  -
+    scope:
+      path: "_posts/download"
+      type: "posts"
+    values:
+      layout: "download"
