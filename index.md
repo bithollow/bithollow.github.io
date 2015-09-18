@@ -5,7 +5,7 @@ sections:
   col-0-title: Welcome to BitHollow
   col-0: A small organization dedicate to develop robotics. We are picturing a better world with automated robot friends by our side. Free mankind from their unwilling works.
 
-  col-1-title: Mission/Vision/Values
+  col-1-title: Mission / Vision / Values
   col-1: Founders of BitHollow are always holding back their discusstion about this, they have no clue where they are heading to.
 
   col-2-title: BH Pilot
