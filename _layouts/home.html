@@ -33,17 +33,41 @@
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4">
-          <div class="container-fluid">
+    <div class="jumbotron" id="home-colum-1">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-4 col-md-4 col-lg-4">
             {% include carousel.html %}
           </div>
+          <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="container-fluid">
+                <center><h3>{{ page.specification['hardware-title'] | textilize }}</h3></center>
+                {{ page.specification['hardware'] | textilize }}
+              </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="container-fluid">
+                <center><h3>{{ page.specification['software-title'] | textilize }}</h3></center>
+                {{ page.specification['software'] | textilize }}
+              </div>
+          </div>
         </div>
-        <div class="col-sm-8 col-md-8 col-lg-8">
-          <div class="panel panel-default">
+      </div>
+    </div>
+
+    <div class="jumbotron" id="home-colum-2">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8 col-md-8 col-lg-8">
+              <div class="container-fluid">
+                {{ content }}
+              </div>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4">
             <div class="container-fluid">
-              {{ content }}
+              {% include carousel-video.html %}
             </div>
           </div>
         </div>

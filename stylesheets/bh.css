@@ -1,0 +1,18 @@
+#coverstory.jumbotron {
+    position: relative;
+    background: #000 url("../images/img_cover_story.jpg") no-repeat center center;
+    background-size: cover;
+    height: 30vw;
+    overflow:hidden;
+}
+
+#home-colum-1.jumbotron {
+    position: relative;
+    background: #FFF;
+    padding: 1em 0em;
+}
+
+#home-colum-2.jumbotron {
+    position: relative;
+    padding: 1em 0em;
+}
