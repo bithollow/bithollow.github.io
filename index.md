@@ -10,25 +10,6 @@ sections:
 
   col-2-title: BH Pilot
   col-2: BH Pilot is a HAT of RaspberryPi 2, together they are capable of piloting drones, rovers etc. With various sensors equipped, BH makes RaspberryPi 2 alive to the real world.
-specification:
-  hardware-title: Hardware spec
-  hardware:
-    |
-    * MPU9250
-    * UBlox NEO M8N
-    * MS5611
-    * PCA9685
-    * DS1339
-    * RGBLed & Singal color leds
-    * I2C/SPI/UART extension ports
-    * ...
-  software-title: Software spec
-  software:
-    |
-    * Linux 4.1.9 + Preempt RT 4.1.7
-    * Debian Jessie armv7a hf
-    * ArduPilot 3.4-dev
-    * ...
 ---
 
 ### Authors and Contributors
