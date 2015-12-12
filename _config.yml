@@ -1,35 +1,18 @@
 encoding: utf-8
 timezone: Aisa/Shanghai
+permalink: pretty
 gems:
   - jekyll-mentions
 defaults:
   -
     scope:
       path: ""
-      type: "pages"
+      type: "posts"
     values:
       layout: "default"
   -
     scope:
-      path: ""
-      type: "home"
-    values:
-      layout: "home"
-  -
-    scope:
-      path: "_posts/blog"
+      path: "downloads"
       type: "posts"
     values:
-      layout: "blog"
-  -
-    scope:
-      path: "_posts/document"
-      type: "posts"
-    values:
-      layout: "document"
-  -
-    scope:
-      path: "_posts/download"
-      type: "posts"
-    values:
-      layout: "download"
+      layout: "download-item"

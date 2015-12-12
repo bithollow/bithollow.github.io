@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    {% include meta.html %}
+  </head>
+  <body>
+    <div class="container-fluid">
+      {% include header.html %}
+    </div>
+    <div class="jumbotron">
+      <center>{{ content }}</center>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <ul class="list-group">
+            <li class="list-group-item">
+              Raspberry PI 2 sd card image
+            </li>
+            {% for post in site.categories['downloads'] %}
+            <li class="list-group-item">
+              {{ post.title }} - {{ post.excerpt}}
+              <br>
+              <a href="{{ post.download-link}}">Download</a>
+              -
+              <a href="{{ post.url }}">Release note</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-6">
+          <ul class="list-group">
+            <li class="list-group-item">
+              ArduPilot prebuilt
+            </li>
+            {% for post in site.categories['downloads'] %}
+            <li class="list-group-item">
+              {{ post.title }} - {{ post.excerpt}}
+              <br>
+              <a href="{{ post.download-link}}">Download</a>
+              -
+              <a href="{{ post.url }}">Release note</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
