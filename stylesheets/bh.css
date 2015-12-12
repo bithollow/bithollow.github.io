@@ -6,13 +6,7 @@
     overflow:hidden;
 }
 
-#home-colum-1.jumbotron {
-    position: relative;
-    background: #FFF;
-    padding: 1em 0em;
-}
-
-#home-colum-2.jumbotron {
+#home-row.jumbotron {
     position: relative;
     padding: 1em 0em;
 }

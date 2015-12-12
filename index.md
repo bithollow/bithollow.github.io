@@ -14,25 +14,25 @@ specification:
   hardware-title: Hardware spec
   hardware:
     |
-    - MPU9250
-    - UBlox NEO M8N
-    - MS5611
-    - PCA9685
-    - DS1339
-    - RGBLed & Singal color leds
-    - I2C/SPI/UART extension ports
-    - ...
+    * MPU9250
+    * UBlox NEO M8N
+    * MS5611
+    * PCA9685
+    * DS1339
+    * RGBLed & Singal color leds
+    * I2C/SPI/UART extension ports
+    * ...
   software-title: Software spec
   software:
     |
-    - Linux 4.1.9 + Preempt RT 4.1.7
-    - Debian Jessie armv7a hf
-    - ArduPilot 3.4-dev
-    - ...
+    * Linux 4.1.9 + Preempt RT 4.1.7
+    * Debian Jessie armv7a hf
+    * ArduPilot 3.4-dev
+    * ...
 ---
 
 ### Authors and Contributors
-April 2015, Aaron Wang Shi (@onceme), Cao Fei(@droneboost), Li Wei Feng (@muzi-15) started BitHollow, don't look down upon them, they might be the rulers of this galaxy in the upcoming 50 years.
+* April 2015, Aaron Wang Shi (@onceme), Cao Fei(@droneboost), Li Wei Feng (@muzi-15) started BitHollow, don't look down upon them, they might be the rulers of this galaxy in the upcoming 50 years.
 
 ### Support or Contact
-Report issues of BH [here](https://github.com/bithollow/manifests/issues), the [wiki](https://github.com/bithollow/bithollow.github.io/wiki) for developer and users
+* Report issues of BH [here](https://github.com/bithollow/manifests/issues), the [wiki](https://github.com/bithollow/bithollow.github.io/wiki) for developer and users
