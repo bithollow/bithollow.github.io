@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <li class="list-group-item">
+    Raspberry PI 2 sd card image
+  </li>
+  {% for post in site.categories['rpi-sd-image'] %}
+  {% include downloads/download-item-list.html%}
+  {% endfor %}
+</ul>

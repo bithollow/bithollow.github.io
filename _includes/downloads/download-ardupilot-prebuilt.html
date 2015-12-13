@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <li class="list-group-item">
+      ArduPilot prebuilt
+  </li>
+  {% for post in site.categories['ardupilot-prebuilt'] %}
+  {% include downloads/download-item-list.html%}
+  {% endfor %}
+</ul>

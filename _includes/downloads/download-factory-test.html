@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <li class="list-group-item">
+    BH board factory test
+  </li>
+  {% for post in site.categories['factory-test'] %}
+  {% include downloads/download-item-list.html%}
+  {% endfor %}
+</ul>
