@@ -23,9 +23,12 @@
             <li class="list-group-item">
               {{ post.title }} - {{ post.excerpt}}
               <br>
-              <a href="{{ post.download-link}}">Download</a>
+              <a href="{{ post.download-link}}">
+                <span class="glyphicon glyphicon-download"/>
+                Download
+              </a>
               -
-              <a href="{{ post.url }}">Release note</a>
+              <a href="{{ post.url }}">Info...</a>
             </li>
             {% endfor %}
           </ul>
@@ -41,7 +44,7 @@
               <br>
               <a href="{{ post.download-link}}">Download</a>
               -
-              <a href="{{ post.url }}">Release note</a>
+              <a href="{{ post.url }}">Info...</a>
             </li>
             {% endfor %}
           </ul>
