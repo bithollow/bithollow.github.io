@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    {% include meta.html %}
+  </head>
+  <body>
+      <div class="panel-group" id="accordion" style="padding-top:0.5em">
+        {% assign last_section = 'invalid' %}
+        {% assign posts = site.categories['developers'] | sort: 'section' %}
+        {% for post in posts %}
+
+        {% if last_section != post.section %}
+        {% if last_section != 'invalid' %}
+          </div>
+        </div>
+        {% endif %}
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#{{ post.section }}">
+                {{ post.section }}
+              </a>
+            </h4>
+          </div>
+          <div id="{{ post.section }}" class="panel-collapse collapse">
+        {% assign last_section = post.section %}
+        {% endif %}
+
+        {% include documents/document-item.html %}
+
+        {% endfor %}
+      </div>
+  </body>
+</html>

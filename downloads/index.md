@@ -1,5 +1,5 @@
 ---
 title: bithollow
-layout: downloads
+layout: downloads/downloads
 ---
 ## BH software download

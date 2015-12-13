@@ -3,10 +3,22 @@
     background: #000 url("../images/img_cover_story.jpg") no-repeat center center;
     background-size: cover;
     height: 30vw;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 #home-row.jumbotron {
     position: relative;
     padding: 1em 0em;
+}
+
+#document-list {
+    width: 25vw;
+    height: calc(100vh - 5em);
+    border: none;
+}
+
+#document-view {
+    width: 65vw;
+    height: calc(100vh - 5em);
+    border: none;
 }

@@ -15,4 +15,10 @@ defaults:
       path: "downloads"
       type: "posts"
     values:
-      layout: "download-item"
+      layout: "downloads/download-item-post"
+  -
+    scope:
+      path: "documents"
+      type: "posts"
+    values:
+      layout: "documents/document-item-post"
