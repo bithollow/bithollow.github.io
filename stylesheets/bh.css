@@ -1,6 +1,6 @@
 #coverstory.jumbotron {
     position: relative;
-    background: #000 url("../images/img_cover_story.jpg") no-repeat center center;
+    background: #000 url("/images/img_cover_story.jpg") no-repeat center center;
     background-size: cover;
     height: 30vw;
     overflow: hidden;
@@ -14,13 +14,13 @@
 #document-list {
     position: relative;
     width: 100%;
-    height: calc(100vh - 6em);
+    height: calc(100vh - 7.5em);
     border: none;
-}
+ }
 
 #document-view {
     position: relative;
     width: 100%;
-    height: calc(100vh - 6em);
+    height: calc(100vh - 7.5em);
     border: none;
 }
