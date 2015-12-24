@@ -7,7 +7,7 @@
   <body>
       <div class="panel-group" id="accordion" style="padding-top:0.5em">
         {% assign last_section = 'invalid' %}
-        {% assign posts = site.categories['developers'] | sort: 'section' %}
+        {% assign posts = site.categories.developers | sort: 'section' %}
         {% for post in posts %}
 
         {% if last_section != post.section %}
