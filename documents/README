@@ -1,0 +1,77 @@
+How to add a post
+-----------------
+
+The original directory layout looks like the following:
+
+documents/
+|-- developers
+|   `-- _posts
+`-- users
+    `-- _posts
+
+- Document posts should be .md files under _posts.
+
+- Naming of each post should be
+  yyyy-mm-dd-$(POST_NUM)-$(POST_NAME).md
+
+  $(POST_NUM) is the sequence number of total posts count, use 6 digits for
+  alignment purpose. The number couldn't be the same as any of the exists post
+  in the same directory
+
+  $(POST_NAME) could be any string, for each word in the string, use dot to
+  separate. It is the default post name that will be displayed. One can also use
+  a different post name from the file name by specifying the YAML front matter
+  inside the .md file.
+
+  For instance,
+  2015-04-01-000000-today.is.a.good.day.to.die.md
+  2015-04-01-000001-loud.and.clear.md
+
+- YAML front matter in each post
+  ---
+  title: $(POST_TITLE)
+  section: $(POST_SECTION_NUM)
+  section_title: $(SECTION_TITLE)
+  ---
+
+  $(POST_TITLE) is the post title will be displayed. It overrides the
+  $(POST_NAME) in file name if "title: $(POST_TITLE)" specified.
+
+  $(POST_SECTION_NUM) is a 3 digits number. It stands for the section that the
+  post belongs to. All posts under the same section will be grouped together
+  with the section title.
+
+  $(POST_SECTION_TITLE) is the section title will be dispalyed.
+
+  For instance,
+  ---
+  title: today is a good day to die
+  section: 0000
+  section_title: Generic
+  ---
+
+- The content of a post is in Markdown format.
+
+- Put resources such as image under each post path
+
+  For instance,
+  2015-04-01-000000-today.is.a.good.day.to.die.md
+
+  after Jekyll generated it to html page, the directory structure looks like
+
+_site/documents/users/
+      |-- 2015
+          `-- 04
+              `-- 01
+                  `-- 000000-today.is.a.good.day.to.die
+                      `-- index.html
+
+  if one wants to upload and display img.png in this post, then just create
+path before generate, and put image inside.
+
+documents/users/
+|-- 2015
+    `-- 04
+        `-- 01
+            `-- 000000-today.is.a.good.day.to.die
+                `-- img.png
