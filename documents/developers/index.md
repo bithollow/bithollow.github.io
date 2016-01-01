@@ -1,6 +1,6 @@
 ---
 title: bithollow
 layout: documents/documents
-document-type: developers
+document_type: developers
 ---
 ## BH documents for developers

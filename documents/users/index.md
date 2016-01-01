@@ -1,6 +1,6 @@
 ---
 title: bithollow
 layout: documents/documents
-document-type: users
+document_type: users
 ---
 ## BH documents for users
