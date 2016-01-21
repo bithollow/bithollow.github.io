@@ -1,26 +1,18 @@
----
-layout: default
----
-<div class="post-list">
-  {% for post in page.posts %}
-  <div class="post">
-    <header class="post-header">
-      <h1 class="post-title">
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </h1>
-      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
-        {% if post.meta %} &middot; {{ post.meta }}{% endif %}</p>
-    </header>
-    <article class="post-content">
-      {{ post.excerpt | markdownify }}
-    </article>
-    <hr/>
-  </div>
-  {% endfor %}
-  {% if page.prevUrl %}
-  <a class="page-prev" href="{{ page.prevUrl | prepend: site.baseurl }}">prev</a>
-  {% endif %}
-  {% if page.nextUrl %}
-  <a class="page-next" href="{{ page.nextUrl | prepend: site.baseurl }}">next</a>
-  {% endif %}
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    {% include meta.html %}
+  </head>
+  <body>
+    <div class="container-fluid">
+      {% include header.html %}
+    </div>
+    <div class="container-fluid">
+      {% include blog/blog-list.html %}
+    </div>
+    <div class="container-fluid">
+      {% include footer.html %}
+    </div>
+  </body>
+</html>
