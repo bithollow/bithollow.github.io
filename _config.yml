@@ -6,7 +6,7 @@ gems:
 
 categories:
   layout: blog/blog.html
-  pagination: 5
+  pagination: 3
   directory: ""
   details:
     blog:
@@ -31,3 +31,9 @@ defaults:
       type: "posts"
     values:
       layout: "documents/document-item-post"
+  -
+    scope:
+      path: "blog"
+      type: "posts"
+    values:
+      layout: "blog/blog-item-post"
