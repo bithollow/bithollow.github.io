@@ -14,10 +14,17 @@
     <hr/>
   </div>
   {% endfor %}
+
+  <ul class="pager">
   {% if page.prevUrl %}
-  <a class="page-prev" href="{{ page.prevUrl | prepend: site.baseurl }}">prev</a>
+  <li class="previous">
+    <a class="page-prev" href="{{ page.prevUrl | prepend: site.baseurl }}">prev</a>
+  </li>
   {% endif %}
   {% if page.nextUrl %}
-  <a class="page-next" href="{{ page.nextUrl | prepend: site.baseurl }}">next</a>
+  <li class="next">
+    <a class="page-next" href="{{ page.nextUrl | prepend: site.baseurl }}">next</a>
+  </li>
   {% endif %}
+  </ul>
 </div>

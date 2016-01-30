@@ -6,7 +6,7 @@ gems:
 
 categories:
   layout: blog/blog.html
-  pagination: 3
+  pagination: 5
   directory: ""
   details:
     blog:
