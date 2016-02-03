@@ -1,0 +1,30 @@
+<div class="post-list">
+  {% for post in page.posts %}
+  <div class="post">
+    <header class="post-header">
+      <h1 class="post-title">
+        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </h1>
+      <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}
+        {% if post.meta %} &middot; {{ post.meta }}{% endif %}</p>
+    </header>
+    <article class="post-content">
+      {{ post.excerpt | markdownify }}
+    </article>
+    <hr/>
+  </div>
+  {% endfor %}
+
+  <ul class="pager">
+  {% if page.prevUrl %}
+  <li class="previous">
+    <a class="page-prev" href="{{ page.prevUrl | prepend: site.baseurl }}">prev</a>
+  </li>
+  {% endif %}
+  {% if page.nextUrl %}
+  <li class="next">
+    <a class="page-next" href="{{ page.nextUrl | prepend: site.baseurl }}">next</a>
+  </li>
+  {% endif %}
+  </ul>
+</div>

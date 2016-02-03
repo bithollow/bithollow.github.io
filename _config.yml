@@ -3,6 +3,15 @@ timezone: Aisa/Shanghai
 permalink: pretty
 gems:
   - jekyll-mentions
+
+categories:
+  layout: blog/blog.html
+  pagination: 3
+  directory: ""
+  details:
+    blog:
+      title: bithollow blog
+
 defaults:
   -
     scope:
@@ -22,3 +31,9 @@ defaults:
       type: "posts"
     values:
       layout: "documents/document-item-post"
+  -
+    scope:
+      path: "blog"
+      type: "posts"
+    values:
+      layout: "blog/blog-item-post"

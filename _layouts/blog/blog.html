@@ -1,0 +1,33 @@
+---
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.title }}</title>
+    {% include meta.html %}
+  </head>
+  <body>
+    <div class="container-fluid">
+      {% include header.html %}
+    </div>
+
+    <div class="row" id="blog-row">
+
+      <div class="col-sm-9 col-md-9 col-lg-9">
+        {% include blog/blog-list.html %}
+      </div>
+
+      <div class="col-sm-3 col-md-3 col-lg-3">
+        <center>
+          {% include blog/weibo-timeline.html %}
+          {% include blog/twitter-timeline.html %}
+        </center>
+      </div>
+
+    </div>
+
+    <div class="container-fluid">
+      {% include footer.html %}
+    </div>
+  </body>
+</html>

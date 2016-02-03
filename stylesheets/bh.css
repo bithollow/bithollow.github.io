@@ -24,3 +24,9 @@
     height: calc(100vh - 7.5em);
     border: none;
 }
+
+#blog-row {
+    margin:0;
+    padding-top:1em;
+    padding-left:8em;
+}
