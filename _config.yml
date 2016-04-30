@@ -1,5 +1,6 @@
 encoding: utf-8
 timezone: Aisa/Shanghai
+url: http://bithollow.github.io
 permalink: pretty
 gems:
   - jekyll-mentions
