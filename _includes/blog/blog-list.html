@@ -10,6 +10,9 @@
     </header>
     <article class="post-content">
       {{ post.excerpt | markdownify }}
+      <div align="right">
+        <a href="{{ post.url | prepend: site.baseurl }}">More...</a>
+      </div>
     </article>
     <hr/>
   </div>
