@@ -1,4 +1,4 @@
-blog: blog/*
+blog: blog/* _includes/blog/* _layouts/blog/* _config.yml
 	rm -rf _site/blog/*
 	rm -rf blog/page*
 	jekyll build
