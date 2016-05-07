@@ -30,3 +30,23 @@
     padding-top:1em;
     padding-left:8em;
 }
+
+.center-image {
+    margin: 0 auto;
+    display: block;
+}
+
+.small-image {
+    position: relative;
+    width: 30%;
+}
+
+.medium-image {
+    position: relative;
+    width: 60%;
+}
+
+.large-image {
+    position: relative;
+    width: 90%;
+}

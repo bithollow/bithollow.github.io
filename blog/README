@@ -1,0 +1,77 @@
+How to add a post
+-----------------
+
+The original directory layout looks like the following:
+
+blog/
+|-- page*
+`-- _posts
+
+- Blog posts should be .md files under _posts.
+
+- Naming of each post should be
+  yyyy-mm-dd-$(POST_NAME).md
+
+  $(POST_NAME) could be any string, for each word in the string, use dot to
+  separate. It is the default post name that will be displayed. One can also use
+  a different post name from the file name by specifying the YAML front matter
+  inside the .md file.
+
+  For instance,
+  2015-12-24-introduction.to.blog.md
+
+- YAML front matter in each post
+  ---
+  title: $(POST_TITLE)
+  ---
+
+  $(POST_TITLE) is the post title will be displayed. It overrides the
+  $(POST_NAME) in file name if "title: $(POST_TITLE)" specified.
+
+  For instance,
+  ---
+  title: Introduction to bithollow blog
+  ---
+
+- The content of a post is in Markdown format.
+
+- Put resources such as image under each post path
+
+  For instance,
+  2015-12-24-introduction.to.blog.md
+
+  after Jekyll generated it to html page, the directory structure looks like
+
+_site/blog/
+|-- 2015
+|   `-- 12
+|       `-- 24
+|           `-- introduction.to.blog
+|               `-- index.html
+`-- page*
+    `-- index.html
+
+  if one wants to upload and display img.png in this post, then just create
+path before generate, and put image inside.
+
+blog/
+|-- 2015
+    `-- 12
+        `-- 24
+            `-- introduction.to.blog
+                `-- start.jpg
+
+  when add image to .md file, existing style classes could be applied.
+  ![img](/path/to/img.png){: $(STYLE_CLASS) ...}
+
+  $(STYLE_CLASS) could be:
+  * .center-image
+  * .small-image
+  * .medium-image
+  * .large-image
+  * .img-thumbnail
+  * .img-cricle
+  * .img-rounded
+
+  For instance,
+  ![start](/blog/2015/12/24/introduction.to.blog/start.jpg){: .center-image .img-thumbnail}
