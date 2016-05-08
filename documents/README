@@ -75,3 +75,21 @@ documents/users/
         `-- 01
             `-- 000000-today.is.a.good.day.to.die.md
                 `-- img.png
+
+- Generate blog pages
+
+  The blog page generation depends on extra Jekyll plugin which can't be executed in github. So blog pages are generated locally, then push to remote.
+
+  Example steps of generating blog pages:
+
+  1. clone git repo and sub modules
+  $ git clone https://github.com/bithollow/bithollow.github.io.git
+  $ cd bithollow.github.io
+  $ git submodule init _plugins
+  $ git submodule update _plugins
+
+  2. modify blog .md file and generate blog pages
+  $ emacs -nw blog/_posts/xxx.md
+  $ make blog
+
+  If no error occured after 'make', check the changed file(s) under blog directory in with 'git status', commit and push them to remote.
