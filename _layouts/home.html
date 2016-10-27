@@ -44,13 +44,13 @@
           <div class="col-sm-4 col-md-4 col-lg-4">
               <div class="container-fluid">
                 <h3>{{ site.data.specifications.hardware-title | textilize }}</h3>
-                {{ site.data.specifications.hardware | textilize }}
+                {{ site.data.specifications.hardware | markdownify }}
               </div>
           </div>
           <div class="col-sm-4 col-md-4 col-lg-4">
               <div class="container-fluid">
                 <h3>{{ site.data.specifications.software-title | textilize }}</h3>
-                {{ site.data.specifications.software | textilize }}
+                {{ site.data.specifications.software | markdownify }}
               </div>
           </div>
         </div>

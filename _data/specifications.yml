@@ -6,13 +6,13 @@ hardware:
   * MS5611
   * PCA9685
   * DS1339
-  * RGBLed & Singal color leds
+  * RGBLed & Single color leds
   * I2C/SPI/UART extension ports
   * ...
 software-title: Software spec
 software:
   |
-  * Linux 4.1.9 + Preempt RT 4.1.7
+  * Linux 4.6.5 + Preempt RT 4.6.5 rt9
   * Debian Jessie armv7a hf
-  * ArduPilot 3.4-dev
+  * ArduPilot 3.6-dev
   * ...
