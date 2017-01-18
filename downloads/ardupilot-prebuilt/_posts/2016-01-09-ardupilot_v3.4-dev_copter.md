@@ -12,6 +12,6 @@ download-link: https://github.com/bithollow/bitburger/raw/master/debs/ardupilot_
 1. Download it into Raspberry Pi sd card
 2. Install on Raspberry Pi like other deb packages
   ```shell
-  $ sudo dpkg -r ardupilot_3.4-dev-1_copter.deb
+  $ sudo dpkg -i ardupilot_3.4-dev-1_copter.deb
   ```
 3. Reboot Raspberry Pi
