@@ -5,14 +5,18 @@
     {% include meta.html %}
   </head>
   <body>
-    <div class="container-fluid">
-      {% include header.html %}
-    </div>
-    <div class="container-fluid">
-      {{ content }}
-    </div>
-    <div class="container-fluid">
-      {% include footer.html %}
+    <div id="site-outline">
+
+      <div class="container-fluid">
+	{% include header.html %}
+      </div>
+      <div class="container-fluid">
+	{{ content }}
+      </div>
+      <div class="container-fluid">
+	{% include footer.html %}
+      </div>
+
     </div>
   </body>
 </html>

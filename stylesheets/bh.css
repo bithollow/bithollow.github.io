@@ -1,3 +1,8 @@
+#site-outline {
+    max-width: 1024px;
+    margin: 0px auto;
+}
+
 #coverstory.jumbotron {
     position: relative;
     background: #000 url("/images/img_cover_story.jpg") no-repeat center center;
@@ -28,7 +33,6 @@
 #blog-row {
     margin:0;
     padding-top:1em;
-    padding-left:8em;
 }
 
 .center-image {
@@ -49,4 +53,8 @@
 .large-image {
     position: relative;
     width: 90%;
+}
+
+.affix {
+    max-width: 18%;
 }

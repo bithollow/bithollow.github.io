@@ -5,77 +5,83 @@
     {% include meta.html %}
   </head>
   <body>
-    <div class="container-fluid">
-      {% include header.html %}
-    </div>
-    <div>
-      {% include coverstory.html %}
-    </div>
+    <div id="site-outline">
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-4 col-md-4 col-lg-4">
-          <div class="well">
-          <center><h3>{{ page.sections['col-0-title'] | textilize }}</h3></center>
-          {{ page.sections['col-0'] | textilize }}
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4">
-          <div class="well">
-          <center><h3>{{ page.sections['col-1-title'] | textilize }}</h3></center>
-          {{ page.sections['col-1'] | textilize }}
-          </div>
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-4">
-          <div class="well">
-          <center><h3>{{ page.sections['col-2-title'] | textilize }}</h3></center>
-          {{ page.sections['col-2'] | textilize }}
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="jumbotron" id="home-row">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-4 col-md-4 col-lg-4">
-            {% include carousel.html %}
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-4">
+	{% include header.html %}
+      </div>
+      <div>
+	{% include coverstory.html %}
+      </div>
+
+      <div class="jumbotron" id="home-row">
+	<div class="container-fluid">
+	  <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="well">
+		<center><h3>{{ page.sections['col-0-title'] | textilize }}</h3></center>
+		{{ page.sections['col-0'] | textilize }}
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="well">
+		<center><h3>{{ page.sections['col-1-title'] | textilize }}</h3></center>
+		{{ page.sections['col-1'] | textilize }}
+              </div>
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="well">
+		<center><h3>{{ page.sections['col-2-title'] | textilize }}</h3></center>
+		{{ page.sections['col-2'] | textilize }}
+              </div>
+            </div>
+	  </div>
+	</div>
+      </div>
+
+      <div class="jumbotron" id="home-row">
+	<div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              {% include carousel.html %}
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
               <div class="container-fluid">
                 <h3>{{ site.data.specifications.hardware-title | textilize }}</h3>
                 {{ site.data.specifications.hardware | markdownify }}
               </div>
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-4">
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
               <div class="container-fluid">
                 <h3>{{ site.data.specifications.software-title | textilize }}</h3>
                 {{ site.data.specifications.software | markdownify }}
               </div>
+            </div>
           </div>
-        </div>
+	</div>
       </div>
-    </div>
 
-    <div class="jumbotron" id="home-row">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-8 col-md-8 col-lg-8">
+      <div class="jumbotron" id="home-row">
+	<div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-8 col-md-8 col-lg-8">
               <div class="container-fluid">
                 {{ content }}
               </div>
-          </div>
-          <div class="col-sm-4 col-md-4 col-lg-4">
-            <div class="container-fluid">
-              {% include carousel-video.html %}
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <div class="container-fluid">
+		{% include carousel-video.html %}
+              </div>
             </div>
           </div>
-        </div>
+	</div>
       </div>
-    </div>
 
-    <div class="container-fluid">
-      {% include footer.html %}
+      <div class="container-fluid">
+	{% include footer.html %}
+      </div>
+
     </div>
   </body>
 </html>

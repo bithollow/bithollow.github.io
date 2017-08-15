@@ -5,22 +5,26 @@
     {% include meta.html %}
   </head>
   <body>
-    <div class="container-fluid">
-      {% include header.html %}
-    </div>
-
-    <div class="row" style="margin:0">
-
-      <div class="col-sm-9 col-md-9 col-lg-9">
-        <iframe id="document-view" name="document-view-frame" src="/documents/{{ page.document_type }}/document-view"></iframe>
-      </div>
-
-      <div class="col-sm-3 col-md-3 col-lg-3">
-        <iframe id="document-list" src="/documents/{{ page.document_type }}/document-list"></iframe>
-      </div>
+    <div id="site-outline">
 
       <div class="container-fluid">
-        {% include footer.html %}
+	{% include header.html %}
+      </div>
+
+      <div class="row" style="margin:0">
+
+	<div class="col-sm-9 col-md-9 col-lg-9">
+          <iframe id="document-view" name="document-view-frame" src="/documents/{{ page.document_type }}/document-view"></iframe>
+	</div>
+
+	<div class="col-sm-3 col-md-3 col-lg-3">
+          <iframe id="document-list" src="/documents/{{ page.document_type }}/document-list"></iframe>
+	</div>
+
+	<div class="container-fluid">
+          {% include footer.html %}
+	</div>
+
       </div>
 
     </div>
