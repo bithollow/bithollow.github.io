@@ -4,18 +4,8 @@ layout: documents/document-item-post
 ---
 ## BH developer documents
 
-### hardware:
-  - MPU9250
-  - UBlox NEO M8N
-  - MS5611
-  - PCA9685
-  - DS1339
-  - RGBLed & Singal color leds
-  - I2C/SPI/UART extension ports
-  - ...
+### {{ site.data.specifications.hardware-title | textilize }}
+{{ site.data.specifications.hardware | markdownify }}
 
-### software:
-  - Linux 4.1.9 + Preempt RT 4.1.7
-  - Debian Jessie armv7a hf
-  - ArduPilot 3.4-dev
-  - ...
+### {{ site.data.specifications.software-title | textilize }}
+{{ site.data.specifications.software | markdownify }}
